@@ -114,6 +114,7 @@ public class QuestionSubmitServiceImpl extends ServiceImpl<QuestionSubmitMapper,
 //            log.info("{}", questionSubmit.getJudgeInfo());
 //        }, 10, TimeUnit.SECONDS);
 
+        //完成通过率功能
         // 当 judgeService.doJudge 完成后，执行日志输出
         judgeFuture.thenRun(() -> {
             // 这里执行日志输出查看是否正常
